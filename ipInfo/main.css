@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: cornflowerblue;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    margin: 0;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container{
+    display: inline-block;
+}
+
+.form_input_ip{
+    display: inline-block;
+    height: 700px;
+
+    background-color: rgba(202, 220, 255, 0.65);
+
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+
+.form_input_ip h1{
+    color: rgba(255, 255, 255, 0.75);
+
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.form_input_ip h2{
+    color: rgba(255, 255, 255, 0.75);
+
+    text-align: center;
+    font-size: 32px;
+
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.form_control{
+    position: relative;
+    margin: 20px 0 40px;
+    width: 300px;
+
+    color: rgba(43, 43, 43, 0.75);
+}
+
+.form_control input{
+    background-color: transparent;
+
+    border: 0;
+    border-bottom: 2px #fff solid;
+
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+
+    transition: 1s;
+}
+
+.form_control input:focus,
+.form_control input:valid{
+    outline: 0;
+    border-bottom-color: rgb(145, 145, 145);
+    transition: 1s;
+}
+
+.form_control label{
+    position: absolute;
+    top: 15px;
+    left: 0;
+    pointer-events: none;
+}
+
+.form_control label span{
+    display: inline-block;
+    font-size: 20px;
+    min-width: 5px;
+    transition: 0.3s;
+}
+
+.form_control input:focus + label span,
+.form_control input:valid + label span{
+    transform: translateY(-30px);
+}
+
+.button{
+    cursor: pointer;
+
+    width: 50%;
+    padding: 10px;
+    font-size: 18px;
+    border: 0;
+    border-radius: 5px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: rgba(255, 255, 255, 0.75);
+
+    transition: 1s;
+}
+
+.button:hover{
+    background-color: rgb(145, 145, 145);
+    transition: 1s;
+}
+
+.IP_info{
+    color: rgba(43, 43, 43, 0.75);
+    font-size: 28px;
+
+    text-align: center;
+    margin-bottom: 20px;
+}
