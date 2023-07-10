@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.showcase_section{
+    position: absolute;
+
+    width: 100%;
+    right: 0;
+    top: 0;
+    min-height: 100vh;
+    padding: 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-image: url("https://wallpapercrafter.com/sizes/2560x1440/127365-vaporwave-Indig0-sunset-digital-art-clouds-room.jpg");
+    background-size: cover;
+    color: #fff;
+
+    transition: 1s;
+    z-index: 1;
+}
+
+.showcase_section header{
+    position: absolute;
+    
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 3;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.showcase_section.active{
+    right: 300px;
+}
+
+.logo{
+    text-transform: uppercase;
+    font-size: 48px;
+}
+
+h2{
+    font-size: 72px;
+    line-height: 0.5em;
+    text-transform: uppercase;
+}
+
+h3{
+    font-size: 41px;
+    line-height: 0.5em;
+    text-transform: uppercase;
+}
+
+p{
+    font-size: 24px;
+    margin: 20px 0;
+    max-width: 700px;
+}
+
+.text a{
+    display: inline-block;
+
+    background: #fff;
+    color: #111;
+
+    font-size: 24px;
+    padding: 10px 30px;
+    margin-top: 25px;
+
+    text-transform: uppercase;
+    text-decoration: none;
+
+    letter-spacing: 2px;
+
+    transition: 1s;
+}
+
+.text a:hover{
+    transform: scale(0.9);
+    transition: 1s;
+}
+
+.social{
+    position: absolute;
+    padding-inline-start: 0px;
+    bottom: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social li{
+    list-style: none;
+}
+
+.social li a{
+    display: inline-block;
+    filter: invert(1);
+    margin-right: 20px;
+    transition: 1s;
+}
+
+.social li a:hover {
+    transform: translateY(-15px);
+}
+
+.toggle{
+    position: relative;
+    width: 70px;
+    height: 70px;
+
+    background-image: url("https://i.ibb.co/HrfVRcx/menu.png");
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+
+    cursor: pointer;
+}
+
+.toggle.active{
+    background-image: url("https://i.ibb.co/rt3HybH/close.png");
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    cursor: pointer;
+}
+
+.menu{
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    width: 300px;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu ul {
+    position: relative;
+    list-style: none;
+}
+  
+.menu ul li a {
+    text-decoration: none;
+    font-size: 36px;
+    color: #111;
+}
