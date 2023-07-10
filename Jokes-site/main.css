@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+}
+
+/*BODY STYLE*/
+body{
+    background-color:cornflowerblue;
+
+    font-family: 'Courier New', Courier, monospace;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    margin: 0;
+    padding: 20px;
+}
+/*-->END<--*/
+
+.container{
+    background-color: white;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+
+    border-radius: 10px;
+    text-align: center;
+
+    max-width: 100%;
+    width: 800px;
+
+    padding: 50px 20px;
+}
+
+h3{
+    margin: 0;
+    opacity: 0.75;
+    letter-spacing: 2px;
+}
+
+.joke{
+    font-size: 30px;
+    margin: 50px auto;
+    max-width: 600px;
+}
+
+.button{
+    background-color: cornflowerblue;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+
+    border: 0;
+    border-radius: 10px;
+
+    padding: 14px 40px;
+    font-size: 16px;
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+
+.button:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+.button:active{
+    transform: scale(0.9);
+}
