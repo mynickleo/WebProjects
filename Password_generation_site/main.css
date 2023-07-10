@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color:aliceblue;
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.password_container{
+    background-color: white;
+    width: 350px;
+
+    border: 2px solid;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header_pass{
+    font-size: 26px;
+    
+    border-bottom: 2px solid;
+
+    width: 100%;
+    height: 50px;
+}
+
+.password_output{
+    width: 95%;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    position: relative;
+
+    margin-bottom: 20px;
+
+    background-color: rgb(227, 241, 255);
+    border: none;
+    border-radius: 10px;
+}
+
+.password_output .output{
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.password_output .copy{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+
+    background-image: url(https://cdn-icons-png.flaticon.com/512/1250/1250607.png);
+    background-size: cover;
+    background-color:rgb(227, 241, 255);
+
+    cursor: pointer;
+
+    border: none;
+
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+
+    transition: 0.5s;
+}
+
+.password_output .copy:hover{
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+
+.settings{
+    width: 100%;
+
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid;
+}
+
+.setting{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 10px 0;
+    padding: 15px;
+
+    font-size: 16px;
+}
+
+.button{
+    width: 50%;
+    height: 50px;
+
+    background-color: rgb(203, 229, 255);
+    font-size: 18px;
+    font-weight: bold;
+
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.button:active{
+    transform: scale(0.9);
+}
+
+.message{
+    position: fixed;
+    text-align: center;
+
+    bottom: 10px;
+    top: 10px;
+    right: 10px;
+    height: 65px;
+
+    background-color: #fff;
+    color: #000;
+    font-size: 20px;
+
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    margin: 0.5rem; 
+}
