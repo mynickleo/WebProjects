@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(222, 230, 236);
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin: 0;
+    height: 100vh;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container{
+    height: 400px;
+    width: 350px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: rgb(255, 255, 255);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container .picture{
+    width: 100%;
+    height: 200px;
+
+    background-image: url("https://images.wallpaperscraft.com/image/single/lights_night_city_blurring_9813_1920x1080.jpg");
+    background-size: cover;
+}
+
+h2{
+    font-size: 20px;
+    font-weight: lighter;
+
+    color:rgb(121, 121, 121);
+
+    text-align: center;
+}
+
+.bold{
+    font-size: 20px;
+    font-weight: bold;
+
+    color: rgb(0, 0, 0);
+}
+
+.container .line{
+    border: 1px solid;
+    
+    color:rgba(0, 0, 0, 0.25);
+    width: 90%;
+}
+
+.container .info{
+    display: flex;
+    flex-direction:row;
+
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+    width: 100%;
+}
+
+.container .picture_info{
+    border: none;
+    border-radius: 25px;
+
+    background-image: url("https://static.tildacdn.com/tild3138-3439-4261-b735-346437663931/unnamed.jpg");
+    background-size: cover;
+
+    height: 100px;
+    width: 100px;
+}
+
+.info .info_text{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    height: 100%;
+}
+
+.info_text small{
+    font-size: 16px;
+    color:rgb(121, 121, 121);
+}
+
+.info_text .bold{
+    font-size: 18px;
+}
